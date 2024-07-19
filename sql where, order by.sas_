@@ -1,0 +1,8 @@
+proc sql;
+
+select *
+from sashelp.cars
+where cylinders>4 and mpg_city >=20
+order by make desc;
+
+run;
